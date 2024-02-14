@@ -21,7 +21,10 @@
   "autoload": {
     "psr-4": {
       "NewfoldLabs\\WP\\Module\\Context\\": "includes"
-    }
+    },
+    "files": [
+      "bootstrap.php"
+    ]
   },
   "require": {
     "wp-forge/helpers": "^2.0"
