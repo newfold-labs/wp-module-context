@@ -3,7 +3,7 @@ use NewfoldLabs\WP\ModuleLoader\Container;
 use NewfoldLabs\WP\Module\Context\Context;
 
 if ( function_exists( 'do_action' ) && function_exists( 'add_action' ) ) {
-	
+
 	// Add context to container on init
 	do_action(
 		'init',
