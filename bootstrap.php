@@ -2,11 +2,9 @@
 use NewfoldLabs\WP\ModuleLoader\Container;
 use NewfoldLabs\WP\Module\Context\Context;
 
-/**
- * Add context to container on init
- */
 if ( function_exists( 'do_action' ) && function_exists( 'add_action' ) ) {
-
+	
+	// Add context to container on init
 	do_action(
 		'init',
 		function () {
@@ -15,7 +13,8 @@ if ( function_exists( 'do_action' ) && function_exists( 'add_action' ) ) {
 			do_action( 'newfold/context/set' );
 
 			// Add to container
-			add_action( 'newfold_container_set', 
+			add_action(
+				'newfold_container_set',
 				function ( Container $container ) {
 
 					// Set all context on container
@@ -25,14 +24,7 @@ if ( function_exists( 'do_action' ) && function_exists( 'add_action' ) ) {
 					);
 
 					// TODO: Set up a service ?
-					// $container->set(
-					// 	'contextService',
-					// 	$container->service(
-					// 		function () {
-					// 			return new ContextService();
-					// 		}
-					// 	)
-					// );
+					// $container->set( 'contextService', $container->service( function () { return new ContextService(); } ) );
 				}
 			);
 
