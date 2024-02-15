@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bcf21495bb4f4066e0c0feea0be5a7b9",
+    "content-hash": "7da3ee29e4ef3e8d7e0294a6d4dd44f1",
     "packages": [
         {
             "name": "doctrine/inflector",
@@ -104,16 +104,16 @@
         },
         {
             "name": "wp-forge/helpers",
-            "version": "2.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wp-forge/helpers.git",
-                "reference": "28ebc09a3390dbff427270a4ed2b93395e8b9b78"
+                "reference": "59e97eeeba51f195f8f7478efb6820295ae218e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wp-forge/helpers/zipball/28ebc09a3390dbff427270a4ed2b93395e8b9b78",
-                "reference": "28ebc09a3390dbff427270a4ed2b93395e8b9b78",
+                "url": "https://api.github.com/repos/wp-forge/helpers/zipball/59e97eeeba51f195f8f7478efb6820295ae218e4",
+                "reference": "59e97eeeba51f195f8f7478efb6820295ae218e4",
                 "shasum": ""
             },
             "require": {
@@ -142,9 +142,9 @@
             "description": "A collection of helpers for WordPress and PHP development.",
             "support": {
                 "issues": "https://github.com/wp-forge/helpers/issues",
-                "source": "https://github.com/wp-forge/helpers/tree/2.0"
+                "source": "https://github.com/wp-forge/helpers/tree/1.1.1"
             },
-            "time": "2022-01-06T13:10:47+00:00"
+            "time": "2021-07-15T11:41:27+00:00"
         }
     ],
     "packages-dev": [
