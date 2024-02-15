@@ -1,5 +1,5 @@
 {
-  "name": "newfold-labs/wp-module-global-ctb",
+  "name": "newfold-labs/wp-module-global-context",
   "description": "Newfold module to determine context for various brands and platforms.",
   "type": "library",
   "license": "GPL-2.0-or-later",
