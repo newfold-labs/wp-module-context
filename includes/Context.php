@@ -1,8 +1,6 @@
 <?php
 namespace NewfoldLabs\WP\Context;
 
-use NewfoldLabs\WP\ModuleLoader\Container;
-use function NewfoldLabs\WP\ModuleLoader\container;
 use function WP_Forge\Helpers\dataGet;
 use function WP_Forge\Helpers\dataSet;
 

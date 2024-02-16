@@ -27,7 +27,7 @@
     ]
   },
   "require": {
-    "wp-forge/helpers": "^1.1"
+    "wp-forge/helpers": "^2.0"
   },
   "require-dev": {
     "newfold-labs/wp-php-standards": "^1.2"
