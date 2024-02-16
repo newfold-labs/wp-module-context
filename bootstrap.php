@@ -1,6 +1,8 @@
 <?php
 use NewfoldLabs\WP\ModuleLoader\Container;
-use NewfoldLabs\WP\Module\Context\Context;
+// use NewfoldLabs\WP\Module\Context\Context;
+
+require_once BLUEHOST_PLUGIN_DIR . 'vendor/newfold-labs/wp-module-context/includes/Context.php';
 
 if ( function_exists( 'add_action' ) ) {
 
@@ -23,11 +25,11 @@ if ( function_exists( 'add_action' ) ) {
 		function ( Container $container ) {
 
 			// Set all context on container
-			// $container->set(
-			// 	'context',
-			// 	Context::all()
-			// );
-
+			$container->set(
+				'context',
+				\NewfoldLabs\WP\Context\Context::all()
+			);
+			
 			// TODO: Set up a service ?
 			// $container->set( 'contextService', $container->service( function () { return new ContextService(); } ) );
 		}
