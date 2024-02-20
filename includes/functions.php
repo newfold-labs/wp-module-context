@@ -1,6 +1,7 @@
 <?php
 
 namespace NewfoldLabs\WP\Context;
+use NewfoldLabs\WP\Context\Context;
 
 /**
  * Helper Get Context Method
