@@ -11,11 +11,13 @@ if ( function_exists( 'add_action' ) ) {
 		'init',
 		function () {
 
+			// TODO: register API
+			// add_action( 'rest_api_init', array( ContextApi::class, 'registerRoutes' ) );
+
 			// Run any registered hooks to set context
 			do_action( 'newfold/context/set' );
 
-			// TODO: register API
-			// add_action( 'rest_api_init', array( ContextApi::class, 'registerRoutes' ) );
+			// attach context to container
 		}
 	);
 
