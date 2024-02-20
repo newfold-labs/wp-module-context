@@ -4,6 +4,8 @@ namespace NewfoldLabs\WP\Context;
 
 use NewfoldLabs\WP\Context\Context;
 
+require_once BLUEHOST_PLUGIN_DIR . 'vendor/newfold-labs/wp-module-context/includes/Context.php';
+
 /**
  * Helper Get Context Method
  *
