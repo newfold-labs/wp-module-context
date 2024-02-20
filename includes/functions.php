@@ -1,6 +1,7 @@
 <?php
 
 namespace NewfoldLabs\WP\Context;
+
 use NewfoldLabs\WP\Context\Context;
 
 /**
@@ -23,4 +24,3 @@ function getContext( $name, $default = null ) {
 function setContext( $name, $value ) {
 	Context::set( $name, $value );
 }
-

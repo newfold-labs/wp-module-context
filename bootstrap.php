@@ -1,5 +1,7 @@
 <?php
-// use NewfoldLabs\WP\Context\Context;
+/**
+ * Context Boostrap
+ */
 
 if ( function_exists( 'add_action' ) ) {
 
@@ -7,8 +9,6 @@ if ( function_exists( 'add_action' ) ) {
 	add_action(
 		'init',
 		function () {
-			// Instantiate a Context instance
-			// $context = new Context();
 			// Run any registered hooks to set context
 			do_action( 'newfold/context/set' );
 		}
