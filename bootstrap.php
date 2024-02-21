@@ -1,7 +1,10 @@
 <?php
 /**
  * Context Boostrap
+ *
+ * @package NewfoldLabs\WP\Context
  */
+
 use NewfoldLabs\WP\Context\Context;
 use function NewfoldLabs\WP\Context\setContext;
 use function NewfoldLabs\WP\Context\getContext;
@@ -9,14 +12,13 @@ use function NewfoldLabs\WP\Context\getContext;
 if ( function_exists( 'add_action' ) ) {
 
 	// Add context to container on plugins_loaded
-	// Using higher priority than default to ensure
-	// context is set before any module registration
 	add_action(
 		'plugins_loaded',
 		function () {
 			// Run any registered hooks to set context
 			do_action( 'newfold/context/set' );
 		},
+		// Using higher priority than default to ensure context is set before any module registration
 		9
 	);
 
