@@ -9,7 +9,7 @@ use function NewfoldLabs\WP\Context\getContext;
 if ( function_exists( 'add_action' ) ) {
 
 	// Add context to container on plugins_loaded
-	// Using higher priority than default to ensure 
+	// Using higher priority than default to ensure
 	// context is set before any module registration
 	add_action(
 		'plugins_loaded',
