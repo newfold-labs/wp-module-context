@@ -45,7 +45,7 @@ if ( function_exists( 'add_filter' ) ) {
 	// Add context to runtime
 	add_filter(
 		'newfold_runtime',
-		function( $runtime ) {
+		function ( $runtime ) {
 			return array_merge(
 				$runtime,
 				array( 'context' => Context::all() )
