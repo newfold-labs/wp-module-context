@@ -2,7 +2,7 @@
 /**
  * Context Boostrap
  */
-use function NewfoldLabs\WP\Context\Context;
+use NewfoldLabs\WP\Context\Context;
 use function NewfoldLabs\WP\Context\setContext;
 use function NewfoldLabs\WP\Context\getContext;
 
