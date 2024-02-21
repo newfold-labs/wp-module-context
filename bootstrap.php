@@ -8,13 +8,16 @@ use function NewfoldLabs\WP\Context\getContext;
 
 if ( function_exists( 'add_action' ) ) {
 
-	// Add context to container on init
+	// Add context to container on plugins_loaded
+	// Using higher priority than default to ensure 
+	// context is set before any module registration
 	add_action(
 		'plugins_loaded',
 		function () {
 			// Run any registered hooks to set context
 			do_action( 'newfold/context/set' );
-		}
+		},
+		9
 	);
 
 	// Platform detection
@@ -32,10 +35,6 @@ if ( function_exists( 'add_action' ) ) {
 				$platform = 'atomic';
 			}
 			setContext( 'platform', $platform );
-			// $context =  Context::all();
-			// $context_platform = getContext('platform');
-			// var_dump($context_platform);
-			// die("products_first_ends");
 		}
 	);
 }
