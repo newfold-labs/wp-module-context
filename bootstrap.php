@@ -7,7 +7,6 @@
 
 use NewfoldLabs\WP\Context\Context;
 use function NewfoldLabs\WP\Context\setContext;
-use function NewfoldLabs\WP\Context\getContext;
 
 if ( function_exists( 'add_action' ) ) {
 

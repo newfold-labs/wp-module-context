@@ -23,6 +23,7 @@
       "NewfoldLabs\\WP\\Context\\": "includes"
     },
     "files": [
+      "includes/functions.php",
       "bootstrap.php"
     ]
   },
