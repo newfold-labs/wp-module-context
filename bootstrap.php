@@ -27,12 +27,7 @@ if ( function_exists( 'add_action' ) ) {
 		function () {
 			// set platform
 			$platform = 'default';
-			if (
-				defined( 'IS_ATOMIC' ) &&
-				IS_ATOMIC &&
-				defined( 'ATOMIC_CLIENT_ID' ) &&
-				'2' === ATOMIC_CLIENT_ID
-			) {
+			if ( defined( 'IS_ATOMIC' ) && IS_ATOMIC ) {
 				$platform = 'atomic';
 			}
 			setContext( 'platform', $platform );
