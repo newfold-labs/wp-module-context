@@ -18,7 +18,7 @@ if ( function_exists( 'add_action' ) ) {
 			do_action( 'newfold/context/set' );
 		},
 		// Using higher priority than default to ensure context is set before any module registration
-		9
+		1
 	);
 
 	// Platform detection
