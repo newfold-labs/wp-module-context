@@ -1,0 +1,7 @@
+{
+  "name": "wp-module-context",
+  "version": "1.0.1",
+  "devDependencies": {
+    "@wordpress/env": "^10.22.0"
+  }
+}
