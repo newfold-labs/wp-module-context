@@ -1,6 +1,6 @@
 {
   "name": "wp-module-context",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "engines": {
     "node": ">=22.11.0",
     "npm": ">=10.9.0"
