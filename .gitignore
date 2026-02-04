@@ -3,4 +3,5 @@
 /tests/_support/_generated
 /wordpress
 /wp-content
-vendor
+/vendor
+.env.testing
