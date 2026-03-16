@@ -11,6 +11,7 @@ Documentation for wp-module-context, for **humans** and **AI agents**. Start her
 | [integration.md](integration.md) | How host plugins set and use context (brand, platform) and runtime. |
 | [development.md](development.md) | Lint, test, and day-to-day workflow. |
 | [dependencies.md](dependencies.md) | Composer dependencies and how they are used. |
+| [release.md](release.md) | Release process: use the Newfold Prepare Release workflow. |
 
 ## Quick links
 
