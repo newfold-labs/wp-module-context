@@ -1,3 +1,10 @@
+---
+name: wp-module-context
+title: Dependencies
+description: Composer and npm dependencies.
+updated: 2025-03-18
+---
+
 # Dependencies
 
 Main Composer dependencies and how they are used. Dev tooling is summarized only.
