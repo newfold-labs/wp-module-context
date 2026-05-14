@@ -34,10 +34,11 @@ jobs:
   bluehost:
     name: Bluehost Build and Test Playwright
     needs: setup
-    uses: newfold-labs/workflows/.github/workflows/module-plugin-test-playwright.yml@main
     permissions:
       actions: write      # Required for reusable Playwright workflow cache save/restore and artifact uploads.
       contents: read      # Required for delegated checkouts against private Composer and git dependencies.
+
+    uses: newfold-labs/workflows/.github/workflows/module-plugin-test-playwright.yml@main
 
     timeout-minutes: 60
 
@@ -50,10 +51,11 @@ jobs:
   bluehost-dev:
     name: Bluehost Dev Build and Test Playwright
     needs: setup
-    uses: newfold-labs/workflows/.github/workflows/module-plugin-test-playwright.yml@main
     permissions:
       actions: write      # Required for reusable Playwright workflow cache save/restore and artifact uploads.
       contents: read      # Required for delegated checkouts against private Composer and git dependencies.
+
+    uses: newfold-labs/workflows/.github/workflows/module-plugin-test-playwright.yml@main
 
     timeout-minutes: 60
 
