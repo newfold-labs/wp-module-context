@@ -35,11 +35,12 @@ jobs:
 
   codecoverage:
     needs: get-repo-name
-    uses: newfold-labs/workflows/.github/workflows/reusable-codecoverage.yml@main
     permissions:
       actions: write       # Required for Actions cache reads/writes executed inside the reusable workflow jobs.
       contents: write      # Required for the reusable codecoverage workflow to push coverage HTML to gh-pages.
       pull-requests: write # Required for the reusable codecoverage workflow to comment on pull requests.
+
+    uses: newfold-labs/workflows/.github/workflows/reusable-codecoverage.yml@main
 
     timeout-minutes: 60
 
