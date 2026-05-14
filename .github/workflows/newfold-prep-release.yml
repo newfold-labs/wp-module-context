@@ -26,6 +26,9 @@ jobs:
       actions: write      # Required so setup-node/npm caching invoked in the delegated workflow can use Actions cache.
       contents: write     # Required for actions/checkout persist-credentials and delegated commits/branches pushes.
       pull-requests: write # Required for delegated gh/API steps that create PRs plus read merged PR metadata.
+
+    timeout-minutes: 45
+
     with:
       module-repo: ${{ github.repository }}
       module-branch: 'main'

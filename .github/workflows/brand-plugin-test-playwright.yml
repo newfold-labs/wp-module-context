@@ -19,6 +19,9 @@ jobs:
     name: Setup
     runs-on: ubuntu-latest
     permissions: {}
+
+    timeout-minutes: 10
+
     outputs:
       branch: ${{ steps.extract_branch.outputs.branch }}
     steps:
@@ -35,6 +38,9 @@ jobs:
     permissions:
       actions: write      # Required for reusable Playwright workflow cache save/restore and artifact uploads.
       contents: read      # Required for delegated checkouts against private Composer and git dependencies.
+
+    timeout-minutes: 60
+
     secrets: inherit
     with:
       module-repo: ${{ github.repository }}
@@ -48,6 +54,9 @@ jobs:
     permissions:
       actions: write      # Required for reusable Playwright workflow cache save/restore and artifact uploads.
       contents: read      # Required for delegated checkouts against private Composer and git dependencies.
+
+    timeout-minutes: 60
+
     secrets: inherit
     with:
       module-repo: ${{ github.repository }}
