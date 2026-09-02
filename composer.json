@@ -35,7 +35,7 @@
         "wp-forge/helpers": "^2.0"
     },
     "require-dev": {
-        "newfold-labs/wp-php-standards": "^1.2",
+        "newfold-labs/wp-php-standards": "^2.0",
         "johnpbloch/wordpress": "@stable",
         "lucatume/wp-browser": "*",
         "phpunit/phpcov": "*"
