@@ -40,7 +40,6 @@ jobs:
 
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test-playwright.yml@main
 
-    timeout-minutes: 60
 
     secrets: inherit
     with:
@@ -57,7 +56,6 @@ jobs:
 
     uses: newfold-labs/workflows/.github/workflows/module-plugin-test-playwright.yml@main
 
-    timeout-minutes: 60
 
     secrets: inherit
     with:

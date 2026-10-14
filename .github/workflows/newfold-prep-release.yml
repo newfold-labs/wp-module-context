@@ -28,7 +28,6 @@ jobs:
 
     uses: newfold-labs/workflows/.github/workflows/reusable-module-prep-release.yml@main
 
-    timeout-minutes: 45
 
     with:
       module-repo: ${{ github.repository }}
